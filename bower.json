@@ -1,16 +1,14 @@
 {
-  "name": "nomocas.org-2015",
+  "name": "nomocas.github.io",
   "version": "0.0.0",
   "authors": [
     "Gilles Coomans <gilles.coomans@gmail.com>"
   ],
   "description": "nomocas official web site",
   "moduleType": [
-    "amd",
-    "globals",
-    "node"
+    "globals"
   ],
-  "license": "MIT",
+  "license": "Creative Common",
   "ignore": [
     "**/.*",
     "node_modules",
