@@ -1,0 +1,28 @@
+{
+  "name": "nomocas.org-2015",
+  "version": "0.0.0",
+  "authors": [
+    "Gilles Coomans <gilles.coomans@gmail.com>"
+  ],
+  "description": "nomocas official web site",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "libs/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "~4.3.0",
+    "bootstrap": "~3.3.4",
+    "jquery": "1.11.3",
+    "jquery-easing": "*"
+  }
+}
