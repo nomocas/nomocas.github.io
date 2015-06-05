@@ -36,5 +36,5 @@
 ehthumbs.db
 Thumbs.db
 
-libs/
+# libs/
 node_modules/
