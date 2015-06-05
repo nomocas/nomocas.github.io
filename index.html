@@ -89,6 +89,7 @@
 										</div>
 									</div>
 									<input type="hidden" name="_next" value="//nomocas.github.io/#thanks" />
+									<input type="text" name="_gotcha" style="display:none" />
 									<!-- Button -->
 									<div class="form-group">
 										<label class="col-md-4 col-sm-4 control-label" for="submit"></label>
@@ -133,7 +134,7 @@
 	<!-- <script src="libs/jquery-easing/jquery.easing.min.js"></script> -->
 	<script type="text/javascript">
 	if (window.location.hash == "#thanks")
-		$("#thanks").show();
+		$("#thanks").show().delay(3000).fadeOut();
 	</script>
 	<script>
 	(function(i, s, o, g, r, a, m) {
