@@ -69,6 +69,7 @@
 				<div class="col-md-12">
 					<div class="vertically-centered">
 						<div class="bloc">
+							<div id="thanks" class="alert alert-success" role="alert" style="display: none;">Thanks for your message !</div>
 							<form class="form-horizontal" action="http://formspree.io/gilles.coomans@gmail.com" method="POST">
 								<fieldset>
 									<!-- Form Name -->
@@ -87,6 +88,7 @@
 											<textarea class="form-control" id="body" name="body"></textarea>
 										</div>
 									</div>
+									<input type="hidden" name="_next" value="//nomocas.github.io/#thanks" />
 									<!-- Button -->
 									<div class="form-group">
 										<label class="col-md-4 col-sm-4 control-label" for="submit"></label>
@@ -129,6 +131,10 @@
 	<script src="libs/jquery/dist/jquery.min.js"></script>
 	<script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
 	<!-- <script src="libs/jquery-easing/jquery.easing.min.js"></script> -->
+	<script type="text/javascript">
+	if (window.location.hash == "#thanks")
+		$("#thanks").show();
+	</script>
 	<script>
 	(function(i, s, o, g, r, a, m) {
 		i['GoogleAnalyticsObject'] = r;
