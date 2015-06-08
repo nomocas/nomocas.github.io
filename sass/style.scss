@@ -15,6 +15,7 @@
 body {
 	font: 100% $block-font;
 	color: $color4;
+	background-color: $color1;
 	width: 100%;
 	height: 100%;
 	margin: 0;
@@ -100,6 +101,11 @@ a:hover {
 	}
 }
 
+.main-icon {
+	color: #fff;
+	font-size: 160px;
+}
+
 .github-section {
 	height: 100%;
 	color: $color1;
@@ -119,11 +125,6 @@ a:hover {
 	strong {
 		color: white;
 	}
-}
-
-.main-icon {
-	color: #fff;
-	font-size: 160px;
 }
 
 .work-section {
