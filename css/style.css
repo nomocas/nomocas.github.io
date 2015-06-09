@@ -16,6 +16,7 @@
 body {
   font: 100% "Source Sans Pro", sans-serif;
   color: #111;
+  background-color: #E65F34;
   width: 100%;
   height: 100%;
   margin: 0;
@@ -24,6 +25,7 @@ body {
 html {
   width: 100%;
   height: 100%;
+  /**/
   font-size: 15px;
   position: relative;
   min-height: 100%; }
@@ -87,6 +89,10 @@ a:hover {
       margin-left: 10px;
       margin-right: 10px; }
 
+.main-icon {
+  color: #fff;
+  font-size: 160px; }
+
 .github-section {
   height: 100%;
   color: #E65F34;
@@ -102,10 +108,6 @@ a:hover {
     font-size: 110px; }
   .github-section strong {
     color: white; }
-
-.main-icon {
-  color: #fff;
-  font-size: 160px; }
 
 .work-section {
   height: 100%;
