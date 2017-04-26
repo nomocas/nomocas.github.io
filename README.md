@@ -1,9 +1,9 @@
 # nomocas.github.io
 
-[![Travis branch](https://img.shields.io/travis/nomocas/htsl-lexicon/master.svg)](https://travis-ci.org/nomocas/htsl-lexicon)
-[![bitHound Overall Score](https://www.bithound.io/github/nomocas/htsl-lexicon/badges/score.svg)](https://www.bithound.io/github/nomocas/htsl-lexicon)
-[![bitHound Dependencies](https://www.bithound.io/github/nomocas/htsl-lexicon/badges/dependencies.svg)](https://www.bithound.io/github/nomocas/htsl-lexicon/master/dependencies/npm)
-[![bitHound Dev Dependencies](https://www.bithound.io/github/nomocas/htsl-lexicon/badges/devDependencies.svg)](https://www.bithound.io/github/nomocas/htsl-lexicon/master/dependencies/npm)
+[![Travis branch](https://img.shields.io/travis/nomocas/nomocas.github.io/master.svg)](https://travis-ci.org/nomocas/nomocas.github.io)
+[![bitHound Overall Score](https://www.bithound.io/github/nomocas/nomocas.github.io/badges/score.svg)](https://www.bithound.io/github/nomocas/nomocas.github.io)
+[![bitHound Dependencies](https://www.bithound.io/github/nomocas/nomocas.github.io/badges/dependencies.svg)](https://www.bithound.io/github/nomocas/nomocas.github.io/master/dependencies/npm)
+[![bitHound Dev Dependencies](https://www.bithound.io/github/nomocas/nomocas.github.io/badges/devDependencies.svg)](https://www.bithound.io/github/nomocas/nomocas.github.io/master/dependencies/npm)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
 
