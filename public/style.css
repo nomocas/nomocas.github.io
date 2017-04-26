@@ -1,0 +1,179 @@
+/*
+* @Author: Gilles Coomans
+* @Date:   2017-04-24 15:29:24
+* @Last Modified by:   Gilles Coomans
+* @Last Modified time: 2017-04-26 00:04:42
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+body {
+    font-family: 'Lato', sans-serif;
+    padding: 20px;
+}
+
+#app {}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0;
+}
+
+h1 + .subtitle {
+    padding: 0;
+    padding-left: 70px;
+    margin: 0;
+}
+
+h1:before {
+    display: inline-block;
+    content: ' ';
+    background-size: 26px 26px;
+    height: 26px;
+    width: 26px;
+    background-image: url(./img/github/github-social-logo.svg);
+    vertical-align: -7%;
+    margin-right: 10px;
+}
+
+h3:before {
+    content: '> ';
+}
+
+.page-header {
+    border-left: 5px solid #dfecef;
+    padding-left: 10px;
+}
+
+@media screen and (min-width: 640px) {
+    body {
+        margin: 50px;
+    }
+    #app {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        max-width: 700px;
+        width: 100%;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    h1:before {
+        margin-right: 15px;
+        background-size: 32px 32px;
+        height: 32px;
+        width: 32px;
+        vertical-align: -5%;
+    }
+}
+
+.libraries-group {
+    padding-left: 10px;
+    border-left: 5px solid #B6DDE5;
+}
+
+.libraries-group > h3 {
+    font-size: 1.1rem;
+    margin-top: 30px;
+}
+
+.library .libraries-group {
+    border: none;
+    padding-left: 0;
+}
+
+.library .libraries-group > h3 {
+    border-radius: 5px;
+    margin: 10px 0;
+    background: white;
+    padding: 5px;
+}
+
+.libraries-group > .description {
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.libraries > .libraries-group {
+    border-left: 5px solid #4FA4B6;
+    margin-bottom: 40px;
+}
+
+.libraries > .libraries-group > h3 {
+    font-size: 1.5rem;
+}
+
+.libraries > .libraries-group > .description {
+    background: #d2e6ea;
+}
+
+.libraries > .libraries-group > .libraries-group {
+    border-left: 5px solid #EAD783;
+}
+
+.libraries > .libraries-group > .libraries-group > .description {
+    background: #fff2ce;
+}
+
+.libraries > .libraries-group > .libraries-group > .libraries-group {
+    border-left: 5px solid #d2468b;
+}
+
+.libraries > .libraries-group > .libraries-group > .libraries-group > .description {
+    background: #fbeef3;
+}
+
+.libraries-group > .libraries-group {
+    margin-top: 20px;
+}
+
+.library {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-left: 5px solid #5BB9D3;
+}
+
+.library > a {
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+
+.library > a:before {
+    display: inline-block;
+    content: ' ';
+    background-size: 24px 24px;
+    height: 24px;
+    width: 24px;
+    background-image: url(./img/github/github-social-logo.svg);
+    vertical-align: -30%;
+    margin-right: 10px;
+}
+
+.badges {
+    margin-top: 10px;
+}
+
+.badges img {
+    margin-right: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.description {
+    font-size: 0.9rem;
+    padding: 15px;
+    background: #F9F9F9;
+    max-width: 500px;
+}
+
+.github-img img {
+    width: 32px;
+    height: 32px;
+}

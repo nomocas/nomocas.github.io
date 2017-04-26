@@ -1,0 +1,79 @@
+#nomocas-data:
+librariesGroup('DSLs',
+	description('I love DSLs.')
+	librariesGroup('babelute',
+		description('DSMM is the Third Revolution. Encapsulate information at all levels, then act. ')
+		library('babelute', description('Internal Domain Specific MultiModeling JS Framework.'))
+		librariesGroup('babelute tools',
+			description('Associated tools to develop useful Descriptive Internal DSL.')
+			library('babelute-uus', description('Universal Unambiguous Sentences. Welcome in Sharing Era.')) 
+			library('babelute-ldl',
+				description('Babelute Lexicon Definition Language (LDL).')
+				librariesGroup('Translations',
+					library('babelute-ldl-to-htsl',
+						description('LDL definition translation to HTSL. Useful for reporting or documentations generation.')
+					)
+				)
+			)
+		)
+		librariesGroup('aright : much more than Schema',
+			description('Expressive DSL for describing objects structure, types, constraints and active transformation.')
+			library('aright-lexicon',
+				description('Objects and Types validation DSL Lexicon.')
+			)
+			librariesGroup('Pragmatics',
+				library('aright-validation', description('Fast Validation Engine.'))
+			) 
+			librariesGroup('Translations',
+				library('aright-to-htsl', description('HTSL representation of aright rules. Useful for reporting or documentations generation.'))
+			)
+		)
+		librariesGroup('HTSL : remove "m" from HTML',
+			description('Pure JS HTML5 Internal DSL : So Small, Fast, Clean and Powerful.')
+			library('htsl-lexicon',
+				description('HTML5 Specific Language Lexicon')
+			)
+			librariesGroup('Examples',
+				library('htsl-todomvc', description('ToDoMVC Demo for HTSL. Short and neat.'))
+				library('nomocas.github.io', description('This website, made with a translation pipe from pure data DSL to HTSL to String.'))
+			)
+			librariesGroup('Dialects',
+				library('htsl-meta-tag-lexicon', description('HTSL Meta Tags Lexicon'))
+				library('htsl-uikit-lexicon', description('Generic uikit base HTSL Lexicon')) 
+				library('htsl-foundation-6-lexicon', description('Foundation 6 HTSL Lexicon')) 
+			)
+			librariesGroup('Pragmatics',
+				library('htsl-dom-pragmatics', description('Simple DOM Engine for HTSL (as demo)')) 
+				library('htsl-string-pragmatics', description('String Engine for HTSL')) 
+				library('htsl-dom-diffing-pragmatics',  description('DOM Diffing Engine for HTSL'))
+			) 
+			librariesGroup('Plugins',
+				library('htsl-component')
+				library('htsl-postal-component')
+				library('htsl-router') 
+			)
+		)
+	)
+	librariesGroup('dothat',
+		description('Behaviour Oriented DSL.')
+		library('dothat', description('Promise A+ Facade DSL tools.'))
+		library('c3po', description('Ressources Abstraction Layer. Will be rewritted really soon as a Dothat familly.'))
+	)
+	librariesGroup('elenpi',
+		description('Expressive Internal DSL for Fast External DSL prototyping.')
+		library('elenpi', description('LL(1) parser generator Internal DSL. Or a good example of how Internal DSL save your days.'))
+	)
+	librariesGroup('mutater',
+		library('mutater', description('Small Immutable DSL tools for native js objects.'))
+	)
+)
+librariesGroup('AOP',
+	description('Tools for managing Aspect Objects and functions')
+	library('decompose', description('Functions (de)composition tools.'))
+	library('ubee', description('Object forgery tools : up/bottom methods, collider and restrictions'))
+)
+librariesGroup('Misc',
+	library('mini-wysiwyg', description('Minimalistic Rich Text Editor.'))
+	library('async-aggregator', description('Async events collector.'))
+)
+
