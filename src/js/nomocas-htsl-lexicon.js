@@ -14,15 +14,12 @@ module.exports = htslLexicon.createDialect('nomocas-htsl')
 			page(content) {
 				return this
 					.pageHead()
-					.div(
-						h.class('page-content')
-						.main(
-							h.id('app')
-							.pageHeader(),
-							content
-						)
-						.ga('UA-63787213-1')
-					);
+					.main(
+						h.id('app')
+						.pageHeader(),
+						content
+					)
+					.ga('UA-63787213-1');
 			},
 			pageHead() {
 				return this
