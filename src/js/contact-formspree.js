@@ -2,7 +2,7 @@
  * @Author: Gilles Coomans
  * @Date:   2017-04-30 11:10:05
  * @Last Modified by:   Gilles Coomans
- * @Last Modified time: 2017-04-30 12:34:42
+ * @Last Modified time: 2017-04-30 12:41:00
  */
 /* src: https://www.sanwebe.com/2013/10/css-html-form-styles */
 
@@ -49,8 +49,8 @@ module.exports = (h) => {
 					.select(
 						h.attr('name', 'selection')
 						.prop('required', true)
-						.option(h.attr('value', 'Job Inquiry'), 'Job Inquiry')
-						.option(h.attr('value', 'General Question'), 'General Question')
+						.option('Job Inquiry', 'Job Inquiry')
+						.option('General Question', 'General Question')
 					)
 					// <input type="hidden" name="_next" value="//nomocas.github.io/#thanks" />
 					// <input type="text" name="_gotcha" style="display:none" />
