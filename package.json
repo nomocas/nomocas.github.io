@@ -15,7 +15,7 @@
     "babelute-uus":"^0.3.0",
     "htsl-lexicon":"^0.2.4",
     "htsl-meta-tag-lexicon":"^0.1.1",
-    "htsl-string-pragmatics":"^0.2.0"
+    "htsl-string-pragmatics":"^0.2.1"
   },
   "devDependencies": {
     "eslint": "^3.15.0",
