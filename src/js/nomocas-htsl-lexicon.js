@@ -72,8 +72,9 @@ module.exports = htslLexicon.createDialect('nomocas-htsl')
 			},
 			pageFooter() {
 				return this.footer(
-					h.class('page-footer')
-					.p('footer')
+					h.class('page-footer'),
+					'Brussels | BE | Tel: ',
+					h.a('tel:+32487383143', '+32 487 383 143')
 				);
 			},
 			ga(key) {
