@@ -1,6 +1,7 @@
 /**
  * @author Gilles Coomans
  */
+'use strict';
 
 const babelute = require('babelute');
 

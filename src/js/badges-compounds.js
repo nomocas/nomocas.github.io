@@ -2,6 +2,7 @@
  * Lib Badges
  * @author Gilles Coomans
  */
+'use strict';
 
 
 module.exports = (h) => {

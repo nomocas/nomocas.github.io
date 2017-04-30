@@ -1,6 +1,7 @@
 /**
  * @author Gilles Coomans
  */
+'use strict';
 
 const htslLexicon = require('htsl-lexicon');
 const htslMetaTagLexicon = require('htsl-meta-tag-lexicon');
