@@ -63,6 +63,14 @@ module.exports = htslLexicon.createDialect('nomocas-htsl')
 					.p('bla bla')
 				);
 			},
+			socialLinks() {
+				return this.div(
+					h.class('social-links')
+					.a('https://github.com/nomocas', 'github', h.classes('github-button'))
+					.a('https://be.linkedin.com/pub/gilles-coomans/22/776/100', 'linkedin', h.classes('linkedin-button'))
+					// .a('https://twitter.com/GillesCoomans', 'twitter', h.classes('twitter-button'))
+				);
+			},
 			libraries(libraries) {
 				return this.section(
 					h.class('libraries'),

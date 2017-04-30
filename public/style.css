@@ -22,17 +22,6 @@ h1 + .subtitle {
     margin: 0;
 }
 
-h1:before {
-    display: inline-block;
-    content: ' ';
-    background-size: 26px 26px;
-    height: 26px;
-    width: 26px;
-    background-image: url(./img/github/github-social-logo.svg);
-    vertical-align: -7%;
-    margin-right: 10px;
-}
-
 h3:before {
     content: '> ';
 }
@@ -152,6 +141,40 @@ a:hover {
     width: 32px;
     height: 32px;
 }
+
+.social-links {
+    border-left: 5px solid #dfecef;
+    padding: 15px;
+    margin: 30px 0;
+}
+
+.social-links a {
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+.social-links a:before {
+    content: ' ';
+    background-size: 32px 32px;
+    display: inline-block;
+    vertical-align: -50%;
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+}
+
+.twitter-button:before {
+    background: url(./img/twitter.svg) no-repeat;
+}
+
+.linkedin-button:before {
+    background: url(./img/linkedin.svg) no-repeat;
+}
+
+.github-button:before {
+    background: url(./img/github/github-social-logo.svg) no-repeat;
+}
+
 .page-footer {
     border-left: 5px solid #4FA4B6;
     margin-top: 30px;
