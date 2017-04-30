@@ -2,7 +2,7 @@
  * @Author: Gilles Coomans
  * @Date:   2017-04-30 11:10:05
  * @Last Modified by:   Gilles Coomans
- * @Last Modified time: 2017-04-30 12:27:38
+ * @Last Modified time: 2017-04-30 12:30:00
  */
 /* src: https://www.sanwebe.com/2013/10/css-html-form-styles */
 
@@ -42,7 +42,7 @@ module.exports = (h) => {
 						h.attr('id', 'message')
 						.prop('required', true)
 						.attr('name', 'message')
-						.attr('placeholder', 'Your Message to Us'), ''
+						.attr('placeholder', 'Your Message to Us'), ' '
 					)
 					// )
 					// .label(h.span('Subject')
