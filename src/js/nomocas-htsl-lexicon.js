@@ -5,9 +5,11 @@
 const htslLexicon = require('htsl-lexicon');
 const htslMetaTagLexicon = require('htsl-meta-tag-lexicon');
 const badges = require('./badges-compounds');
+const contactForm = require('./contact-formspree');
 
 module.exports = htslLexicon.createDialect('nomocas-htsl')
 	.addCompounds(badges)
+	.addCompounds(contactForm)
 	.addCompounds((h) => {
 		const meta = htslMetaTagLexicon.initializer(h.__first_level_babelute__);
 		return {
@@ -39,9 +41,13 @@ module.exports = htslLexicon.createDialect('nomocas-htsl')
 			homeContent(content) {
 				return this
 					// .intro('this is intro')
-					.libraries(content);
-				// .contact()
-				// .pageFooter();
+					.socialLinks()
+					.libraries(content)
+					.section(
+						h.id('contact')
+						.contactForm()
+					)
+					.pageFooter();
 			},
 			pageHeader() {
 				return this.header(
@@ -63,9 +69,6 @@ module.exports = htslLexicon.createDialect('nomocas-htsl')
 					// .h2('libraries'),
 					libraries
 				);
-			},
-			contact() {
-				return this.section(h.id('contact').h2('contact'));
 			},
 			pageFooter() {
 				return this.footer(
