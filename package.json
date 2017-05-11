@@ -11,9 +11,9 @@
   "author": "Gilles Coomans",
   "license": "MIT",
   "dependencies": {
-    "babelute":"^0.5.0",
+    "babelute":"^0.6.0",
     "babelute-uus":"^0.3.0",
-    "htsl-lexicon":"^0.2.4",
+    "htsl-lexicon":"^0.2.6",
     "htsl-meta-tag-lexicon":"^0.1.1",
     "htsl-string-pragmatics":"^0.2.1"
   },
