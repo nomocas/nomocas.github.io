@@ -6,13 +6,15 @@
 const htslLexicon = require('htsl-lexicon');
 const htslMetaTagLexicon = require('htsl-meta-tag-lexicon');
 const badges = require('./badges-compounds');
+const ga = require('./ga');
 const contactForm = require('./contact-formspree');
 
 module.exports = htslLexicon.createDialect('nomocas-htsl')
 	.addCompounds(badges)
 	.addCompounds(contactForm)
-	.addCompounds((h) => {
-		const meta = htslMetaTagLexicon.initializer(h.__first_level_babelute__);
+	.addCompounds(ga)
+	.addCompounds((h, isFirstLevel) => {
+		const meta = htslMetaTagLexicon.initializer(isFirstLevel);
 		return {
 			page(content) {
 				return this
@@ -84,23 +86,6 @@ module.exports = htslLexicon.createDialect('nomocas-htsl')
 					'Brussels | BE | Tel: ',
 					h.a('tel:+32487383143', '+32 487 383 143')
 				);
-			},
-			ga(key) {
-				return this.scriptRaw(`
-	(function(i, s, o, g, r, a, m) {
-		i['GoogleAnalyticsObject'] = r;
-		i[r] = i[r] || function() {
-			(i[r].q = i[r].q || []).push(arguments)
-		}, i[r].l = 1 * new Date();
-		a = s.createElement(o),
-			m = s.getElementsByTagName(o)[0];
-		a.async = 1;
-		a.src = g;
-		m.parentNode.insertBefore(a, m)
-	})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-	ga('create', '${ key }', 'auto');
-	ga('send', 'pageview');
-`);
 			},
 
 			/**
