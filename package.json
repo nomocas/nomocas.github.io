@@ -1,6 +1,6 @@
 {
   "name": "nomocas.github.io",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Official website for me (nomocas)",
   "main": "src/index.js",
   "scripts": {
@@ -11,11 +11,11 @@
   "author": "Gilles Coomans",
   "license": "MIT",
   "dependencies": {
-    "babelute":"^0.6.0",
-    "babelute-uus":"^0.3.0",
-    "htsl-lexicon":"^0.2.6",
-    "htsl-meta-tag-lexicon":"^0.1.1",
-    "htsl-string-pragmatics":"^0.2.1"
+    "babelute": "^0.6.0",
+    "babelute-uus": "^0.3.0",
+    "htsl-lexicon": "^0.2.6",
+    "htsl-meta-tag-lexicon": "^0.1.1",
+    "htsl-string-pragmatics": "^0.2.1"
   },
   "devDependencies": {
     "eslint": "^3.15.0",
