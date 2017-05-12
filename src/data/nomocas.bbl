@@ -75,5 +75,6 @@ librariesGroup('AOP',
 librariesGroup('Misc',
 	library('mini-wysiwyg', description('Minimalistic Rich Text Editor.'))
 	library('async-aggregator', description('Async events collector.'))
+	library('es6-rb-mc-k-i-boilerplate', description('Full ES6 module starter-kit'))
 )
 

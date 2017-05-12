@@ -57,11 +57,11 @@ module.exports = htslLexicon.createDialect('nomocas-htsl')
 					.p(h.class('subtitle'), 'Software Craftsman. Tools maker.')
 				);
 			},
-			intro() {
+			intro(content) {
 				return this.section(
 					h.class('intro')
-					.h1('intro')
-					.p('bla bla')
+					.h1('intro'),
+					content
 				);
 			},
 			socialLinks() {
@@ -75,7 +75,6 @@ module.exports = htslLexicon.createDialect('nomocas-htsl')
 			libraries(libraries) {
 				return this.section(
 					h.class('libraries'),
-					// .h2('libraries'),
 					libraries
 				);
 			},
@@ -87,9 +86,7 @@ module.exports = htslLexicon.createDialect('nomocas-htsl')
 				);
 			},
 			ga(key) {
-				return this.tag('script', [
-					h.onString((descriptor) => {
-						descriptor.children = `
+				return this.scriptRaw(`
 	(function(i, s, o, g, r, a, m) {
 		i['GoogleAnalyticsObject'] = r;
 		i[r] = i[r] || function() {
@@ -103,9 +100,7 @@ module.exports = htslLexicon.createDialect('nomocas-htsl')
 	})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 	ga('create', '${ key }', 'auto');
 	ga('send', 'pageview');
-`;
-					})
-				]);
+`);
 			},
 
 			/**

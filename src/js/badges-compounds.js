@@ -53,9 +53,9 @@ module.exports = (h) => {
 		},
 		badgeDependencies(author, libName) {
 			return this.badge(
-				'https://npmjs.org/package/' + libName,
-				'https://img.shields.io/david/' + author + '/' + libName + '.svg',
-				'dependecies'
+				`https://www.bithound.io/github/${ author }/${ libName }/master/dependencies/npm`,
+				`https://www.bithound.io/github/${ author }/${ libName }/badges/dependencies.svg`,
+				'bitHound Dependencies'
 			);
 		},
 		badgeDevDependencies(author, libName) {
