@@ -8,7 +8,7 @@ librariesGroup('DSLs',
 			description('Associated tools to develop useful Descriptive Internal DSL.')
 			library('babelute-uus', description('Universal Unambiguous Sentences. Welcome in Sharing Era.')) 
 			library('babelute-ldl',
-				description('Babelute Lexicon Definition Language (LDL).')
+				description('Babelute Lexicon Definition Language (LDL) (Sentences Schema)')
 				librariesGroup('Translations',
 					library('babelute-ldl-to-htsl',
 						description('LDL definition translation to HTSL. Useful for reporting or documentations generation.')
@@ -68,7 +68,7 @@ librariesGroup('DSLs',
 	)
 )
 librariesGroup('AOP',
-	description('Tools for managing Aspect Objects and functions')
+	description('Tools for managing Aspect Objects and functions as Layers')
 	library('decompose', description('Functions (de)composition tools.'))
 	library('ubee', description('Object forgery tools : up/bottom methods, collider and restrictions'))
 )
