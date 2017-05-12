@@ -34,8 +34,8 @@ librariesGroup('DSLs',
 				description('HTML5 Specific Language Lexicon')
 			)
 			librariesGroup('Examples',
-				library('htsl-todomvc', description('ToDoMVC Demo for HTSL. Short and neat.'))
-				library('nomocas.github.io', description('This website, made with a translation pipe from pure data DSL to HTSL to String.'))
+				library('htsl-todomvc', description('ToDoMVC Demo for HTSL. Short and neat.'), true)
+				library('nomocas.github.io', description('This website, made with a translation pipe from pure data DSL to HTSL to String.'), true)
 			)
 			librariesGroup('Dialects',
 				library('htsl-meta-tag-lexicon', description('HTSL Meta Tags Lexicon. Everything for the html head.'))

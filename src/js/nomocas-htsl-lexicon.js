@@ -117,11 +117,11 @@ module.exports = htslLexicon.createDialect('nomocas-htsl')
 					libraries
 				);
 			},
-			library(name, sublibs) {
+			library(name, sublibs, noNPMBadges) {
 				return this.div(
 					h.class('library')
 					.a('https://github.com/nomocas/' + name, name)
-					.div(h.class('badges').badges('nomocas', name, true)),
+					.div(h.class('badges').if(noNPMBadges, h.badgesWithoutNPM('nomocas', name, false), h.badges('nomocas', name, true))),
 					sublibs
 				);
 			}

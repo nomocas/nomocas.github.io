@@ -23,6 +23,15 @@ module.exports = (h) => {
 				.badgeLicence(author, libName);
 			// .badgeStandardVersion(author, libName);
 		},
+		badgesWithoutNPM(author, libName, coveralls) {
+			return this
+				.badgeTravis(author, libName)
+				.badgeBithound(author, libName)
+				.if(coveralls, h.badgeCoveralls(author, libName))
+				.badgeDependencies(author, libName)
+				.br()
+				.badgeLicence(author, libName);
+		},
 		badgeTravis(author, libName) {
 			return this.badge(
 				'https://travis-ci.org/' + author + '/' + libName,
